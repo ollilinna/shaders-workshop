@@ -1,0 +1,31 @@
+$spacing: 2em;
+
+@font-face {
+  font-family: 'Jungka Regular'; // add fallbacks
+  src: url('../fonts/jungka-regular.woff') format('woff');
+}
+
+html {
+  font-family: 'Jungka Regular';
+}
+  
+.header {
+  position: fixed;
+  top: $spacing;
+  left: $spacing;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 2;
+  width: calc(100% - 2 * #{$spacing});
+}
+
+.header_right {
+  margin: 0 $spacing 0 auto;
+}
+
+.header_link {
+  color: #FAFAFA;
+  mix-blend-mode: exclusion;
+  text-decoration: none;
+}
